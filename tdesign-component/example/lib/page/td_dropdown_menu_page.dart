@@ -226,6 +226,9 @@ TDDropdownMenu _buildGroup(BuildContext context) {
             TDDropdownItemOption(label: '选项8', value: '8', group: '角色'),
             TDDropdownItemOption(
                 label: '禁用选项', value: '9', disabled: true, group: '角色'),
+            TDDropdownItemOption(label: '选项10', value: '10', group: '能力'),
+            TDDropdownItemOption(label: '选项11', value: '11', group: '能力'),
+            TDDropdownItemOption(label: '选项12', value: '12', group: '能力'),
           ],
           onChange: (value) {
             print('选择：$value');

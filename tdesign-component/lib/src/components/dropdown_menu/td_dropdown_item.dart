@@ -410,7 +410,8 @@ class _TDDropdownItemState extends State<TDDropdownItem> {
           ? selected.contains(element.value)
           : element.value == selected;
     });
-    if (isRadio) {
+    // 分栏模式通知组件数更新实时数据
+    if (isRadio || (widget.optionsColumns ?? 1) > 1) {
       setState(() {});
     }
     widget.onChange
